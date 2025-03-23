@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="icon" href="/img/logo_ico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--MENU-->
+    <header class="titulo">Um Pouco Mais Sobre Mim</header>
+    <button class="menu-button" onclick="toggleMenu(event)">☰</button>
+    <div class="menu" id="menu">
+        <a href="home.html">Pagina Inicial</a>
+        <a href="sobreMim.html">Sobre Mim</a>
+        <a href="social.html">Social</a>
+        <a href="projetos.html">Projetos</a>
+    </div>
+    <div class="desfoque" id="blurOverlay" onclick="closeMenu(event)"></div>
+    <!--FIM-MENU-->
+
+    <div class="container-sobreMim">
+
+        <!--CARD-IMAGEM-TEXTO-->
+        <div class="card-sobreMim">
+            <img src="/img/eu_2.PNG" alt="card com uma foto minha">
+            <div class="card__content">
+                <p class="card__title" >Janpierry Santana</p>
+                <p class="card__description">tenho 20 anos, atualmente estou cursando ADS e tambem aprendendo frontend,
+                    a fim de aperfeiçoar minhas habilidades e engressar ao mercado de trabalho,com objetivo de se tornar
+                    um exelente e capacitado profissional no futuro, prentendo expandir o meu conhecimento muito alem do
+                    frontend.</p>
+            </div>
+        </div>
+        <!--CARD-IMAGEM-TEXTO-FIM-->
+
+
+        <!--MINHAS-HABILIDADES-->
+        <div class="caixa-geral">
+            <div class="titulo-caixa">Essas são algumas das minhas competencias</div>
+
+            <div class="habilidades">
+                <div class="html">
+                    <img src="/img/html-5.png" alt="html5">
+                    <p>Ja dominei a maioria dos comandos ultilizados para o desinvolvimento web/frontend</p>
+                </div>
+                <div class="css">
+                    <img src="/img/css-3.png" alt="css3">
+                    <p>Estou cada dia melhorando, me considero intermediario no CSS</p>
+                </div>
+                <div class="javascript">
+                    <img src="/img/javascript.png" alt="javascript">
+                    <p>Ja no java script, me considero iniciante sei alguns comandos basicos</p>
+                </div>
+            </div>
+            <div class="lista">
+                <p>Tambem possuo habilidades como:</p>
+                <ul class="skil">
+                    <li>Aprendizado continuo</li>
+                    <li>Boa comunicação</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Responsabilidade</li>
+                    <li>Resolução de problemas</li>
+                    <li>Atenção aos detalhes</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

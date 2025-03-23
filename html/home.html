@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janpierry Santana</title>
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="icon" href="/img/logo_ico.ico" type="image/x-icon">
+</head>
+
+
+<body>
+
+    <!--MENU-->
+    <header class="titulo">Janpierry Santana Sousa</header>
+
+    <button class="menu-button" onclick="toggleMenu(event)">☰</button>
+
+    <div class="menu" id="menu">
+        <a href="home.html" onclick="loadContent('home')">Pagina Inicial</a>
+        <a href="sobreMim.html" onclick="loadContent('sobre')">Sobre Mim</a>
+        <a href="social.html" onclick="loadContent('social')">Social</a>
+        <a href="projetos.html" onclick="loadContent('projetos')">Projetos</a>
+    </div>
+    
+    <div class="desfoque" id="blurOverlay" onclick="closeMenu(event)"></div>
+    <!--FIM-MENU-->
+
+    <!--EMBAIXO-MENU-->
+    <div class="content" id="mainContent">
+        <div class="eu">
+            <img src="/img/eu_.PNG" onclick="toggleMenu(event)" alt="uma foto minha">
+        </div>
+
+        <h2 class="titulo_eu" onclick="toggleMenu(event)">FrontEnd Developer</h2>
+
+        <footer onclick="toggleMenu(event)">
+            Aprendendo e aprimorando as habilidades com desinvolvimentos web
+        </footer>
+    </div>
+    <!--EMBAIXO-MENU-FIM-->
+
+    <script src="/script.js"></script>
+</body>
+</html>
