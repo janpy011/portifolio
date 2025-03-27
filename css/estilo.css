@@ -813,6 +813,10 @@ li:hover{
     margin-left: 30px;
 }
 
+.norte-buss{
+    width: 200px;
+}
+
 .btn-norteBuss{
     width: fit-content;
     padding: 10px;
@@ -829,14 +833,4 @@ li:hover{
     background-color: #000000;
     transform: scale(1.1);
     transition: .5s;
-}
-
-
-
-
-
-
-
-.norte-buss{
-    width: 200px;
 }
