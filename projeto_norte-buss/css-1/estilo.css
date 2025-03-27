@@ -1,0 +1,374 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*HEADER*/
+.topo {
+    display: flex;
+    justify-content: space-between;
+
+    height: 58px;
+    width: 100%;
+
+    background-color: rgb(0, 90, 163);
+    color: #fff;
+}
+
+.logo {
+    margin-left: 170px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo img {
+    width: 163px;
+}
+
+.menu {
+    margin: auto 0 auto -135px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 1em;
+}
+
+.menu-li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-li:hover {
+    font-weight: 700;
+    text-shadow: 0px 0px 10px blue;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.pesquisa {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 100px;
+}
+
+.pesquisa input {
+    background-color: rgba(0, 0, 0, .3);
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color: #fff;
+    padding: 10px;
+}
+
+.imagemFundo {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 500px;
+    width: 100%;
+
+    background: url(/img-1/eletrico-fundo.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.botao {
+    margin-bottom: 35px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.botao a {
+    text-decoration: none;
+    color: #004cd8;
+    text-shadow: 0px 0px 10px blue;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.botao:hover {
+    transform: rotateX(360deg);
+    box-shadow: 0px 0px 10px white;
+    transition: 1s;
+}
+
+/*HEADER-FIM*/
+
+
+/*DIV-ACESSO-RESTRITO*/
+.acesso-restrito {
+    display: flex;
+    background-color: #e6e6e6;
+    box-shadow: 3px 3px 3px gray;
+    border: none;
+    height: 70px;
+    width: 100%;
+}
+
+.merge {
+    display: flex;
+    margin: auto;
+}
+
+.merge span {
+    font-size: 20px;
+    margin-right: 13px;
+    margin-top: 6px;
+}
+
+.restrito-ul {
+    display: flex;
+    gap: 1em;
+}
+
+.restrito-ul li {
+    list-style: none;
+    background-color: #004cd8;
+    padding: 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.restrito-li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.restrito-li:hover {
+    transform: scale(1.1);
+    background-color: green;
+    transition: .4s;
+}
+
+/*DIV-ACESSO-RESTRITO-FIM*/
+
+
+/*SECTIONS*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px gray;
+}
+
+article img {
+    width: 80px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.9em;
+    width: 340px;
+    height: 299px;
+}
+
+article .caixinha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.caixinha p {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.paragrafos span {
+    color: rgba(0, 0, 0, .4);
+    font-size: 17px;
+}
+
+.botao-article {
+    color: #fff;
+    background-color: #004cd8;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.botao-article:hover {
+    background-color: #00153d;
+    transition: .4s;
+}
+
+.links-noticias {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.links-noticias a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #5080db;
+    border-bottom: gray 1px solid;
+}
+
+.links-noticias a:hover {
+    color: gray;
+    transition: .3s;
+}
+
+/*SECTIONS-FIM*/
+
+
+/*DIV-PENULTIMA*/
+.penultima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5em;
+    height: 200px;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.penultima .area {
+    color: rgba(0, 0, 0, .6);
+    font-size: 17px;
+}
+
+.fecebook {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    background-color: #3b5998;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.fecebook:hover {
+    background-color: #00153d;
+    transition: .4s;
+}
+
+.fecebook .like {
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.selo img {
+    width: 180px;
+}
+
+/*DIV-PENULTIMA-FIM*/
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #004cd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+/*FECEBOOK-BLIBIOTECA*/
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+    margin: auto 0 auto 0;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f09433;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+}
+/*FECEBOOK-FIM*/
+
+.ul-footer ul {
+    display: flex;
+    gap: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+li .a-footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+li .a-footer:hover {
+    color: #00153d;
+    transition: .3s;
+}
+
+.autor {
+    margin-left: 50px;
+}
+
+.autor a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.autor a:hover{
+    text-shadow: 0px 0px 10px white;
+    color: #00153d;
+    transition: 1s;
+}
+/*FOOTER-FIM*/
