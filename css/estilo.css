@@ -557,7 +557,6 @@ footer {
     gap: 20px;
 }
 
-/*TODOS OS CONTAINER*/
 .socialContainer {
     width: 52px;
     height: 52px;
@@ -774,3 +773,70 @@ li:hover{
     transition: 0.4s;
 }
 /*SOBREMIM-FIM*/
+
+
+/*PROJETOS*/
+.container-projetos{
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    transition: filter 0.3s ease-in-out;
+    position: relative;
+    z-index: 1000;
+}
+
+.caixa-projetos{
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 80%;
+    height: 80%;
+    margin: 75px auto 0 auto;
+    border-radius: 20px;
+}
+
+.caixa-projetos:hover{
+    box-shadow: 0px 0px 10px white;
+    transition: 1s;
+}
+
+.projeto-norte-buss{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.btn-norteBuss{
+    width: fit-content;
+    padding: 10px;
+    background-color: #00000085;
+    box-shadow: 3px 3px 3px gray;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-norteBuss:hover{
+    background-color: #000000;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+
+
+
+
+
+.norte-buss{
+    width: 200px;
+}

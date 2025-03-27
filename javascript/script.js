@@ -36,3 +36,7 @@ function loadContent(type) {
         content.innerHTML = '<div class="section"><h2>Área do Funcionário</h2><p>Acesse informações e comunicados exclusivos.</p></div>';
     }
 }
+
+function norteBuss() {
+    window.open("/projeto_norte-buss/html-1/index.html", "_blank") ;
+}
