@@ -3,12 +3,12 @@ function toggleMenu(event) {
     event.stopPropagation();
     const menu = document.getElementById("menu");
     const overlay = document.getElementById("blurOverlay");
-    const content = document.getElementById("mainContent");
     const isOpen = menu.classList.contains("show");
     menu.classList.toggle("show");
     overlay.classList.toggle("show", !isOpen);
     content.classList.toggle("blur", !isOpen);
 }
+
 function closeMenu(event) {
     const menu = document.getElementById("menu");
     const overlay = document.getElementById("blurOverlay");
@@ -19,24 +19,27 @@ function closeMenu(event) {
         document.getElementById("mainContent").classList.remove("blur");
     }
 }
-document.addEventListener("click", function(event) {
+
+document.addEventListener("click", function (event) {
     closeMenu(event);
 });
-function loadContent(type) {
-    const content = document.getElementById("mainContent");
-    if (type === 'home') {
-        content.innerHTML = '<div class="section"><h1>Bem-vindo ao Transporte Público Moderno</h1><p>Nosso objetivo é oferecer um transporte de qualidade para todos.</p></div>';
-    } else if (type === 'endereco') {
-        content.innerHTML = '<div class="section"><h2>Nosso Endereço</h2><iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe></div>';
-    } else if (type === 'video') {
-        content.innerHTML = '<div class="section"><h2>Vídeo Institucional</h2><iframe src="https://www.youtube.com/embed/..." allowfullscreen></iframe></div>';
-    } else if (type === 'noticias') {
-        content.innerHTML = '<div class="section"><h2>Últimas Notícias</h2><p>Fique por dentro das novidades do transporte público.</p></div>';
-    } else if (type === 'funcionario') {
-        content.innerHTML = '<div class="section"><h2>Área do Funcionário</h2><p>Acesse informações e comunicados exclusivos.</p></div>';
+
+//ANIMAÇAO TITULO-HOME
+const text = "Frontend Developer.";
+const typingElement = document.getElementById("typing");
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
     }
 }
 
+typeEffect();
+
+//IR PARA NORTE BUSS
 function norteBuss() {
-    window.open("/projeto_norte-buss/html-1/index.html", "_blank") ;
+    window.open("/projeto_norte-buss/html-1/index.html", "_blank");
 }

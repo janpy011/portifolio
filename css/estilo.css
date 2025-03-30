@@ -138,8 +138,13 @@ body {
 .eu img {
     width: 300px;
     height: 300px;
-    box-shadow: 0px 0px 10px white;
     border-radius: 50%;
+}
+
+.eu img:hover{
+    box-shadow: 0px 0px 20px #fff;
+    transform: rotateY(360deg);
+    transition: 2s;
 }
 
 
@@ -161,15 +166,29 @@ body {
     transition: 1.5s;
 }
 
-
 footer {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0); /* Começa transparente */
     border-radius: 3px;
     cursor: pointer;
-
     font-size: 15px;
     font-weight: 700;
     padding: 10px;
+
+    animation: backgroundGrow 10s forwards;
+}
+
+@keyframes backgroundGrow {
+    from {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+footer:hover{
+    box-shadow: 0px 0px 20px #fff;
+    transition: 3s;
 }
 
 /*HOME-FIM*/
@@ -568,15 +587,15 @@ footer {
     transition-duration: .3s;
 }
 
-/*INSTAGRAM*/
+/*GITHUB*/
 .containerOne:hover {
-    background-color: #d62976;
+    background-color: #aaaaaa;
     transition-duration: .3s;
 }
 
-/*FECEBOOK*/
+/*LINKEDIN*/
 .containerTwo:hover {
-    background-color: #3b5998;
+    background-color: #0e76a8;
     transition-duration: .3s;
 }
 
@@ -586,9 +605,9 @@ footer {
     transition-duration: .3s;
 }
 
-/* WHATSAPP*/
+/*DISCORD*/
 .containerFour:hover {
-    background-color: #128C7E;
+    background-color: #268bd2;
     transition-duration: .3s;
 }
 
@@ -598,7 +617,7 @@ footer {
 }
 
 .socialSvg {
-    width: 17px;
+    width: 15px;
 }
 
 .socialSvg path {
@@ -729,8 +748,8 @@ footer {
 }
 
 .html:hover, .css:hover, .javascript:hover{
-    transform: translateY(-10px);
-    transition: .7s;
+    transform: translateY(-15px);
+    transition: .4s;
 }
 
 .html:hover{
