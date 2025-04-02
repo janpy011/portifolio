@@ -39,7 +39,13 @@ function typeEffect() {
 
 typeEffect();
 
+//PROJETOS
+
 //IR PARA NORTE BUSS
 function norteBuss() {
-    window.open("/projeto_norte-buss/html-1/index.html", "_blank");
+    window.open("../projeto_norte-buss/html-1/index.html", "_blank");
+}
+
+function arCondicionado() {
+    window.open("../projeto-ar_condicionado/html-2/index.html", "_blank");
 }
