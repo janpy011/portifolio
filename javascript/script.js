@@ -46,6 +46,7 @@ function norteBuss() {
     window.open("../projeto_norte-buss/html-1/index.html", "_blank");
 }
 
-function arCondicionado() {
+//IR PARA PROJETO AR
+function projetoAr() {
     window.open("../projeto-ar_condicionado/html-2/index.html", "_blank");
 }
