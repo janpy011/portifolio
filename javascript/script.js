@@ -40,7 +40,6 @@ function typeEffect() {
 typeEffect();
 
 //PROJETOS
-
 //IR PARA NORTE BUSS
 function norteBuss() {
     window.open("../projeto_norte-buss/html-1/index.html", "_blank");

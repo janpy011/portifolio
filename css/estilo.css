@@ -141,7 +141,7 @@ body {
     border-radius: 50%;
 }
 
-.eu img:hover{
+.eu img:hover {
     box-shadow: 0px 0px 20px #fff;
     transform: rotateY(360deg);
     transition: 2s;
@@ -167,7 +167,8 @@ body {
 }
 
 footer {
-    background-color: rgba(255, 255, 255, 0); /* Começa transparente */
+    background-color: rgba(255, 255, 255, 0);
+    /* Começa transparente */
     border-radius: 3px;
     cursor: pointer;
     font-size: 15px;
@@ -181,12 +182,13 @@ footer {
     from {
         background-color: rgba(255, 255, 255, 0);
     }
+
     to {
         background-color: rgba(255, 255, 255, 0.6);
     }
 }
 
-footer:hover{
+footer:hover {
     box-shadow: 0px 0px 20px #fff;
     transition: 3s;
 }
@@ -557,6 +559,7 @@ footer:hover{
         transform: scale(1);
     }
 }
+
 /*ANIMAÇAO-SEND-FIM*/
 
 
@@ -639,11 +642,34 @@ footer:hover{
         opacity: 1;
     }
 }
+
+@media screen and (max-width:768px) {
+    .social-expansivel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button{
+        margin-top: -300px;
+        margin-right: -250px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: -104%;
+    }
+}
+
 /*REDES-SOCIAL-FIM*/
 
 
 /*SOBREMIM*/
-.container-sobreMim{
+.container-sobreMim {
     flex: 1;
     width: 90%;
     max-width: 1200px;
@@ -670,18 +696,18 @@ footer:hover{
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 80px auto 30px auto;
 }
-  
+
 .card img {
     width: 48px;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-  
+
 .card-sobreMim:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
+}
+
 .card__content {
     position: absolute;
     top: 0;
@@ -695,51 +721,76 @@ footer:hover{
     transform-origin: bottom;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-  
-  .card-sobreMim:hover .card__content {
+
+.card-sobreMim:hover .card__content {
     transform: rotateX(0deg);
-  }
-  
+}
+
 .card__title {
     margin: 0;
     font-size: 24px;
     color: #333;
     font-weight: 700;
 }
-  
+
 .card-sobreMim:hover img {
     scale: 0;
 }
-  
+
 .card__description {
     margin: 10px 0 0;
     font-size: 14px;
     color: #777;
     line-height: 1.4;
 }
+
 /*IMG-TEXTO-SOBREMIM-FIM*/
 
 
 
 /*OUTROS-SOBREMIM*/
-.caixa-geral{
+.caixa-geral {
     width: 100dvh;
     margin: 0 auto 0 auto;
 }
 
-.titulo-caixa{
+.titulo-caixa {
     color: white;
     font-size: 25px;
     text-shadow: #000000;
 }
 
-.habilidades{
+.habilidades {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     gap: 3em;
     margin: 30px;
 }
 
-.html, .css, .javascript{
+@media screen and (max-width: 768px) {
+    .titulo-caixa {
+        width: 300px;
+        margin-left: 70px;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        margin-left: 120px;
+        width: 200px;
+    }
+
+    .lista {
+        width: 250px;
+        margin-left: 100px;
+    }
+}
+
+.html,
+.css,
+.javascript {
     background-color: gray;
     border-radius: 5px;
     border: none;
@@ -747,55 +798,59 @@ footer:hover{
     padding: 8px;
 }
 
-.html:hover, .css:hover, .javascript:hover{
+.html:hover,
+.css:hover,
+.javascript:hover {
     transform: translateY(-15px);
     transition: .4s;
 }
 
-.html:hover{
+.html:hover {
     box-shadow: 0px 0px 10px orangered;
 }
 
-.css:hover{
+.css:hover {
     box-shadow: 0px 0px 10px blue;
 }
 
-.javascript:hover{
+.javascript:hover {
     box-shadow: 0px 0px 10px yellow;
 }
 
-.habilidades img{
+.habilidades img {
     width: 50px;
     height: 50px;
 }
 
-.skil{
+.skil {
     border: 2px solid gray;
     border-radius: 20px;
     padding: 5px;
     list-style: none;
 }
 
-.habilidades p, li{
+.habilidades p,
+li {
     color: white;
     text-shadow: #000000;
 }
 
-li{
+li {
     cursor: none;
 }
 
-li:hover{
+li:hover {
     text-shadow: 0px 0px 10px white;
     font-weight: 700;
     transform: translateX(10px);
     transition: 0.4s;
 }
+
 /*SOBREMIM-FIM*/
 
 
 /*PROJETOS*/
-.container-projetos{
+.container-projetos {
     flex: 1;
     width: 90%;
     max-width: 1200px;
@@ -806,7 +861,7 @@ li:hover{
     z-index: 1000;
 }
 
-.caixa-projetos{
+.caixa-projetos {
     background-color: rgba(255, 255, 255, 0.6);
     width: 80%;
     height: 80%;
@@ -814,12 +869,12 @@ li:hover{
     border-radius: 20px;
 }
 
-.caixa-projetos:hover{
+.caixa-projetos:hover {
     box-shadow: 0px 0px 10px white;
     transition: 1s;
 }
 
-.projeto{
+.projeto {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -832,31 +887,28 @@ li:hover{
     margin-left: 30px;
 }
 
-.projetos-img{
+.projetos-img {
     width: 200px;
 }
 
-.btn-projetos{
-    width: fit-content;
-    padding: 10px;
-    background-color: #00000085;
-    box-shadow: 3px 3px 3px gray;
-    color: #fff;
+.botao-projetos {
+    margin-top: 5px;
+}
+
+.btn-projetos {
+    color: white;
+    text-decoration: none;
     font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-projetos:hover{
     background-color: #000000;
-    transform: scale(1.1);
-    transition: .5s;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #000000;
 }
-/*PROJETOS-FIM*/
 
-@media screen and(max-width: 768px){
-    .colaborador img {
-        width: 30%;
-    }
+.btn-projetos:hover {
+    background-color: rgba(0, 0, 0, .6);
+    transform: translateY(10px);
+    transition: .4s;
 }
+
+/*PROJETOS-FIM*/
