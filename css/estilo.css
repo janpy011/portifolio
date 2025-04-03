@@ -853,3 +853,10 @@ li:hover{
     transform: scale(1.1);
     transition: .5s;
 }
+/*PROJETOS-FIM*/
+
+@media screen and(max-width: 768px){
+    .colaborador img {
+        width: 30%;
+    }
+}
