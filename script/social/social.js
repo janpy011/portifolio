@@ -1,4 +1,4 @@
-const text = "Seja Bem Vindo!...";
+const text = "Visite...";
 const typingElement = document.getElementById("titulo");
 let index = 0;
 

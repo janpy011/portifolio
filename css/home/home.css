@@ -363,16 +363,29 @@ article img:hover {
 /* RESPONSIVIDADE */
 @media screen and (max-width: 768px) {
   .menu {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
+    height: fit-content;
+    padding: 10px;
   }
 
-  .navegacao ul {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-    gap: 0.5em;
+  .logo{
+    font-size: 10px;
+    width: fit-content;
+    margin-left: 10px;
+  }
+
+  .logo:hover{
+    font-size: 12px;
+    width: fit-content;
+  }
+
+  .navegacao ul li{
+    width: fit-content;
+    font-size: 10px;
+  }
+
+  .sub-titulo{
+    width: 80%;
+    text-align: center;
   }
 
   .eu-2 {
@@ -388,19 +401,38 @@ article img:hover {
     text-align: center;
   }
 
+  .habilidades{
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+  }
+
   .articles {
-    width: 90%;
+    width: 80%;
     padding: 10px;
   }
 
+  article{
+    width: 40%;
+  }
+
   .article img {
-    width: 100px;
+    width: 90px;
+  }
+
+  .outros{
+    margin-bottom: 20px;
   }
 
   .competencias {
     flex-direction: column;
     height: auto;
     gap: 1em;
+  }
+
+  .outros-titulo{
+    font-size: 30px;
+    text-align: center;
   }
 
   .competencias ul {
