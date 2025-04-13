@@ -41,3 +41,11 @@ const artigos = document.querySelectorAll('.articles article');
 artigos.forEach((el, index) => {
   el.classList.add(index % 2 === 0 ? 'surge-esquerda' : 'surge-direita');
 });
+
+const hamburger = document.getElementById('hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
