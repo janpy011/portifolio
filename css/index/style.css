@@ -35,6 +35,7 @@ h1, p{
     color: #ffffff;
     font-weight: 700;
     text-shadow: 3px 3px 10px #ffffff;
+    width: fit-content;
 }
 p{
     margin:0 0 40px 0;
@@ -59,7 +60,7 @@ p{
 
 @media screen and (max-width:768px){
     #botao{
-        font-size: 10px;
+        font-size: 9px;
     }
     p{
         margin-bottom: 20px;
